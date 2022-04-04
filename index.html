@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"/>
+    <title>Cadastro Soldador</title>
+    <style>
+        #enviar{
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo1">Trabalhe Conosco.</h1>
+    <h2 id="titulo2">Metal Soldas</h2>
+
+    <form >
+        <div>
+            <fieldset id="corpo1">
+        <label for="nome" class="iden">Nome:</label><input type="text" name="nome" id="nome" size="25" maxlength="40" placeholder="Digite Aqui" required/>
+        
+        
+        <label for="sobrenome" class="iden">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="sobrenome" size="25" maxlength="40" placeholder="Digite Aqui" required/><br>
+
+        <label for="Email" class="iden">E-mail:</label><input type="email" name="email" id="Email" size="25" maxlength="40" required/>
+        
+        
+        <label for="telefone" class="iden">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone" size="25" required/>
+    </fieldset>
+    </div>
+         <div> 
+          <fieldset id="corpo2">      
+        <label><strong> Selecione suas principais habilidades</strong></label><br>
+        <input type="checkbox" name="solda1" id="solda1" value="Tig">
+        <label for="solda1">Tig</label>
+        <input type="checkbox" name="solda2" id="solda2" value="MIG/MAG">
+        <label for="solda2">MIG/MAG</label> 
+        <input type="checkbox" name="solda3" id="solda3" value="Eletrodo" >
+        <label for="solda3">Eletrodo</label>
+        <input type="checkbox" name="solda4" id="solda4" value="Arco Submerso" >
+        <label for="solda4">Arco Submerso</label> 
+        <input type="checkbox" name="solda5" id="solda5" value="Arame Tubular" >
+        <label for="solda5">Arame Tubular</label>
+    </fieldset>
+
+    <fieldset id="corpo2">
+    <label><strong>Suas três últimas experiências </strong></label>
+    <p id="saida1">Data de saída:<input type="date" name="data"></p> 
+    <p id="entrada1">Data de entarda:<input type="date" name="data"/></p>
+    
+    <textarea class="area" rows="10" cols="60" name="experiencia" maxlength="800" placeholder="Detalhe aqui suas atividades"></textarea>
+
+    <p id="saida">Data de saída:<input type="date" name="data" ></p>
+    <p id="entrada" >Data de entarda:<input type="date" name="data" /></p> 
+    
+    
+    <textarea class="area" rows="10" cols="60" name="experiencia" maxlength="800" placeholder="Detalhe aqui suas atividades"></textarea>
+
+    <p id="saida2">Data de saída:<input type="date" name="data"></p> 
+    <p id="entrada2">Data de entarda:<input type="date" name="data"/></p>
+    
+    <textarea class="area" rows="10" cols="60" name="experiencia" maxlength="800" placeholder="Detalhe aqui suas atividades"></textarea><br>
+    <label id="conc">Fale em poucas palavras porque você merece trabalhar na Metal Soldas:</label><br>
+    <textarea id="are" rows="10" cols="65" name="fale" maxlength="500"></textarea>
+</fieldset>
+    </div>
+        <div>
+            <fieldset>
+        <label for="Aceita viajar"><strong>Aceita viajar?</strong></label>
+        <select id="Aceita viajar">
+            <option>Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+        </select><br>
+        <input type="image" name="enviar" id="enviar" src="IMAGENS/botao-enviar-vaga.png"/>
+    </fieldset>
+    </div>
+    </form>
+</body>
+</html>
