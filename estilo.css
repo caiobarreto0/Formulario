@@ -1,13 +1,16 @@
 @charset "UTF-8";
 
+
 body{
-    background-color: rgb(233, 225, 215);
+    background-color: rgb(128, 174, 209);
     font-family: Arial, Helvetica, sans-serif;
+    
+    
 }
 
 .div_fields{
    display: flex;
-   margin-left: 50px;
+   margin-left: 70px;
 }
 
 .div_imput{
@@ -29,15 +32,20 @@ body{
 
 h1#titulo1{
     margin-left: 500px;
+    color: rgba(27, 28, 29, 0.541);
+    
+    
 }
 
 h2#titulo2{
     margin-left: 580px;
+    color: rgba(27, 28, 29, 0.541);
 }
 
 form{
     margin: 0 auto;
     width: 700px;
+    color: rgb(34, 36, 35);
 }
 .iden{
 
@@ -84,16 +92,21 @@ padding: 20px;
 
 
 #saida2{
-    margin-left: 350px;
+    margin-left: 370px;
+}
+
+#date{
+    width: 100px;
 }
 
 #entrada2{
     margin-top: -40px;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 .area{
     margin-left: 100px;
+    opacity: 1;
 }
 
 #conc{
@@ -105,3 +118,13 @@ padding: 20px;
     margin-top: 15px;
     margin-left: 100px;
 }
+
+.viajar{
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+
+#aceita{
+    margin-bottom: -20px;
+}
+
