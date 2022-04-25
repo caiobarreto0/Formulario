@@ -4,89 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css"/>
-    <title>Cadastro Soldador</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Tapestry&family=Titillium+Web&family=Updock&family=Water+Brush&display=swap" rel="stylesheet">
+    <title>Cadastro Programador</title>
    
 </head>
 <body>
-    
-    <h1 id="titulo1">Trabalhe Conosco</h1>
-    <h2 id="titulo2">Metal Soldas</h2>
-
-    <form>
-        <div>
-            <fieldset id="corpo">
-        <label for="nome" class="iden">Nome:</label><input type="text" name="nome" id="nome" size="25" maxlength="40" placeholder="Digite Aqui" required/>
-        
-        
-        <label for="sobrenome" class="iden">Sobrenome:</label>
-        <input type="text" name="sobrenome" id="sobrenome" size="25" maxlength="40" placeholder="Digite Aqui" required/><br>
-
-        <label for="Email" class="iden">E-mail:</label><input type="email" name="email" id="Email" size="25" maxlength="40" required placeholder="Digite Aqui"/>
-        
-        
-        <label for="telefone" class="iden">Telefone:</label>
-        <input type="tel" name="telefone" id="telefone" size="25" required placeholder="Digite Aqui"/>
-    </fieldset>
-    </div>
-         <div> 
-          <fieldset id="corpo1">      
-        <label><strong> Selecione suas principais habilidades</strong></label><br>
-        <input type="checkbox" name="solda1" id="solda1" value="Tig">
-        <label for="solda1">Tig</label>
-        <input type="checkbox" name="solda2" id="solda2" value="MIG/MAG">
-        <label for="solda2">MIG/MAG</label> 
-        <input type="checkbox" name="solda3" id="solda3" value="Eletrodo" >
-        <label for="solda3">Eletrodo</label>
-        <input type="checkbox" name="solda4" id="solda4" value="Arco Submerso" >
-        <label for="solda4">Arco Submerso</label> 
-        <input type="checkbox" name="solda5" id="solda5" value="Arame Tubular" >
-        <label for="solda5">Arame Tubular</label>
-    </fieldset>
-
-    <fieldset id="corpo2" >
-        
-    <label><strong>Suas três últimas experiências </strong></label>
-
-    <div class="div_fields">
-        <div class="div_imput" ><p>Data de saída:</p><input type="date" name="data"></div>
-        <div class="div_imput" ><p>Data de entarda:</p><input type="date" name="data"/></div>
-    </div>
-    
-    <textarea class="area" rows="10" cols="60" name="experiencia" maxlength="800" placeholder="Detalhe aqui suas atividades"></textarea>
-
-
-    <p id="saida">Data de saída:<input type="date" name="data" ></p>
-    <p id="entrada" >Data de entarda:<input type="date" name="data" /></p> 
+    <div>
+<h1 id="cadastro">Cadastro de Programadores</h1>   
+</div>
     
     
-    <textarea class="area" rows="10" cols="60" name="experiencia" maxlength="800" placeholder="Detalhe aqui suas atividades"></textarea>
-
-    <p id="saida2">Data de saída:<input type="date" id="date" name="data"></p> 
-    <p id="entrada2">Data de entarda:<input type="date" name="data"/></p>
-    
-    <textarea class="area" rows="10" cols="60" name="experiencia" maxlength="800" placeholder="Detalhe aqui suas atividades"></textarea><br>
-    <label id="conc">Fale em poucas palavras porque você merece trabalhar na Metal Soldas:</label><br>
-    <textarea id="are" rows="10" cols="61" name="fale" maxlength="500" placeholder="Seja Objetivo"></textarea>
-</fieldset>
 <fieldset>
-    <p id="aceita"><strong>Aceita viajar?</strong></p>
-    <select class="viajar">
-        <option class="viajar" >Selecione</option>
-        <option>Sim</option>
-        <option>Não</option>
-    </select><br>
-    <button>Enviar</button>
-</fieldset>
+    <form>
+        
+        <div class="campo">
+       <label for="nome" class="tcampo">Nome:</label>
+       <input type="text" class="input" name="nome" id="nome" size="38" maxlength="40" placeholder="Nome" required><br><br>
     </div>
-        
-           
-       
-       
-        
+    <div class="campo">
+       <label for="sobre" class="tcampo">Sobrenome:</label>
+       <input type="text" class="input" name="sobre" id="sobre" size="30" maxlength="40" placeholder="Sobrenome" required><br><br>
+    </div>
+    <div class="campo">
+       <label for="email" class="tcampo">Email:</label>
+       <input type="text" class="input" name="email" id="email" size="30" maxlength="40" placeholder="Email" required><br><br>
+    </div>
+    <div class="campo">
+       <label for="fone" class="tcampo">Telefone:</label>
+       <input type="tel"  class="input" name="fone" id="fone" size="20" maxlength="30" placeholder="Ex:71982090820" required>
+    </div><br><br><br><br>
     
-    </fieldset>
+
+
+       <div id="habilidade">
+           <h3 class="thabilidade">Selecione suas habilidades</h3><br>
+       <label for="html">HTML</label>
+       <input type="checkbox"  name="html" id="html">
+       <label for="css3">CSS3</label>
+       <input type="checkbox" name="css3" id="css3">
+       <label for="angular">Angular</label>
+       <input type="checkbox" name="angular" id="angular">
+       <label for="node">Node.js</label>
+       <input type="checkbox" name="node" id="node">
+       <label for="java">Java script</label>
+       <input type="checkbox" name="java" id="java">
+       <label for="react">React</label>
+       <input type="checkbox" name="react" id="react">
+       <label for="java">Java</label>
+       <input type="checkbox" name="java" id="java">
+    </div>
+
+
     
-    </form>
+
+  
+<div id="endereco">
+<label for="ende" class="tespaco">Endereço:</label>
+<input type="text"   class="input"   name="endereco" id="ende" size="30" maxlength="55" placeholder="Rua, Trav, Quadra.." required><br>
+<input type="text"   class="input" name="endereco" id="ende" size="30" maxlength="55" placeholder="Bairro" required><br>
+<input type="text"  class="input"  name="endereco" id="ende" size="10" maxlength="10" placeholder="Nº23" required>
+</div>
+
+<div id="local">
+<label for="cidade">Selecione sua cidade:</label>
+
+<select id="cidade">
+    <option value="Salvador">Salvador</option>
+    <option value="Rio de Janeiro">Rio de Janeiro</option>
+    <option value="Recife">Recife</option>
+    <option value="São Paulo">São Paulo</option>
+    <option value="Curitiba">Curitiba</option>
+    <option value="Santa Catarina">Santa Catarina</option>
+</select>
+</div>
+
+
+
+<div id="text">
+    <label for="fale">Fale um pouco sobre você</label><br><br>
+    <textarea id="fale" name="fale" rows="8" cols="60" style="width:50em ;">Escreva aqui sobre você</textarea>
+</div>
+
+
+
+
+<div>
+    <label for="curri">Curriculo</label>
+    <input type="file" name="curriculo" id="curri">
+</div><br>
+
+<input type="submit" style="width: 5%; background-color: rgb(154, 222, 231);">
+
+</fieldset>
+
+ </form>
 </body>
 </html>
